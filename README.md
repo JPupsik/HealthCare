@@ -11,6 +11,12 @@ We use Jenkins as CI/CD tool, so be careful with updates and familiar with the r
 * Update your branch before start
 * Be sure that your commit is stable
 
+## Architecture
+
+### Server
+<img src="https://i.ibb.co/qmNYdGH/django.png" alt="diagram">
+
+### Cloud
 <img src="https://i.ibb.co/4SDmVGQ/diagram.png" alt="diagram">
 
 ## Git

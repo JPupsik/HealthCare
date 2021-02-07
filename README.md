@@ -14,7 +14,7 @@ We use Jenkins as CI/CD tool, so be careful with updates and familiar with the r
 ## Architecture
 
 ### Server
-<img src="https://i.ibb.co/qmNYdGH/django.png" alt="diagram">
+<img src="https://i.ibb.co/1qXLChX/django.png" alt="diagram">
 
 ### Cloud
 <img src="https://i.ibb.co/4SDmVGQ/diagram.png" alt="diagram">

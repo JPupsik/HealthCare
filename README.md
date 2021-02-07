@@ -11,7 +11,7 @@ We use Jenkins as CI/CD tool, so be careful with updates and familiar with the r
 * Update your branch before start
 * Be sure that your commit is stable
 
-<img src="https://i.ibb.co/rv3jBhP/diagram.png" alt="diagram">
+<img src="https://i.ibb.co/4SDmVGQ/diagram.png" alt="diagram">
 
 ## Git
 | Command name        | Description              |

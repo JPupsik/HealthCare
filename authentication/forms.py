@@ -1,10 +1,11 @@
 import unicodedata
 
 from django.contrib.auth.models import User
-from django.contrib.auth import password_validation
+from django.contrib.auth import password_validation, validators
 from django.contrib.auth.forms import AuthenticationForm, UsernameField, \
     UserCreationForm
 from django import forms
+from django.core.validators import EmailValidator
 from django.utils.translation import gettext_lazy as _
 
 
@@ -34,7 +35,6 @@ class UsernameField(forms.CharField):
         }
 
 
-# todo: Fix two not required fields in HTML (Password, Password confirmation)
 class RegisterForm(UserCreationForm):
     email = forms.CharField(
         label=_("Email"),
@@ -42,15 +42,23 @@ class RegisterForm(UserCreationForm):
         widget=forms.EmailInput(attrs={'autocomplete': 'on',
                                        'class': 'form-control',
                                        'id': 'email'}),
-        help_text=password_validation.password_validators_help_text_html(), # todo: Change it to email validation
+        help_text=EmailValidator(),
     )
-    password = forms.CharField(
+    password1 = forms.CharField(
         label=_("Password"),
-        widget=forms.PasswordInput(attrs={'autocomplete': 'off',
-                                          'class': 'form-control',
-                                          'id': 'password'}),
         strip=False,
+        widget=forms.PasswordInput(attrs={'autocomplete': 'new-password',
+                                          'class': 'form-control',
+                                          'id': 'password1'}),
         help_text=password_validation.password_validators_help_text_html(),
+    )
+    password2 = forms.CharField(
+        label=_("Password confirmation"),
+        widget=forms.PasswordInput(attrs={'autocomplete': 'new-password',
+                                          'class': 'form-control',
+                                          'id': 'password2'}),
+        strip=False,
+        help_text=_("Enter the same password as before, for verification."),
     )
 
     class Meta:

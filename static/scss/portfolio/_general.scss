@@ -1,0 +1,672 @@
+.dotted-scrollspy {
+  background: rgba(0, 0, 0, 0.4);
+  width: 50px;
+}
+
+.culinary,
+.model,
+.developer,
+.designer,
+.architect,
+.legal,
+.health-care {
+  .nav-link {
+    padding: 0.5em 0.5em;
+  }
+
+  .font-bold {
+    font-weight: 500;
+  }
+}
+
+.culinary,
+.architect,
+.legal {
+
+  .hm-black-strong {
+
+    .mask,
+    .full-bg-img {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.culinary,
+.model {
+  .navbar {
+    background-color: #7d8488;
+
+    &:not(.top-nav-collapse) {
+      background-color: transparent;
+    }
+
+    @media (max-width: 768px) {
+      &:not(.top-nav-collapse) {
+        background: #7d8488;
+      }
+    }
+
+    @media (min-width: 769px) {
+      &:not(.top-nav-collapse) {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.model,
+.health-care,
+.designer {
+  .section hr {
+    display: block;
+  }
+}
+
+
+.legal,
+.developer,
+.architect {
+  .navbar {
+    background-color: #444444;
+  }
+}
+
+.designer,
+.architect {
+  .blue-grey-text {
+    color: #53535c !important;
+  }
+}
+
+// Culinary portfolio
+.culinary {
+
+  .streak1 {
+    height: 150px;
+  }
+
+  .btn-secondary {
+    background: #90CAF9 !important;
+
+    &:hover,
+    &:focus {
+      background-color: #64a2d3 !important;
+    }
+  }
+}
+
+// Model portfolio
+.model {
+
+  .hm-indigo-strong {
+
+    .mask,
+    .full-bg-img {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .jumbotron {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  .section {
+    .section-heading {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .card.card-body {
+    background-color: rgba(238, 238, 238, 0.7);
+  }
+
+  .indigo-text {
+    color: #546aa6 !important;
+  }
+}
+
+
+
+// Developer portfolio
+.developer {
+
+  .hm-white-strong {
+
+    .mask,
+    .full-bg-img {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .dark-grey-text {
+    color: #464646 !important;
+    font-weight: 300;
+  }
+
+  .light-grey-text {
+    color: #807d7d !important;
+  }
+
+  .yellow-text {
+    color: #ffbc55 !important;
+  }
+
+  mark {
+    padding: .4rem 6rem .4rem 6rem;
+    background-color: rgba(248, 192, 67, 0.7);
+
+    @media (max-width: 450px) {
+      padding: .4rem 1rem .4rem 1rem;
+      line-height: 1.8;
+    }
+  }
+
+  .btn-floating {
+    background-color: #464646;
+    margin-top: 6rem;
+
+    @media (max-width: 450px) {
+      margin-top: 1rem;
+    }
+  }
+
+  .yellow {
+    background-color: #f7d27e !important;
+  }
+
+  .progress-bar {
+    height: 0.4rem;
+    background-color: #facc62;
+  }
+
+  .progress {
+    background-color: #b0b0b0;
+  }
+
+  .blockquote p {
+    font-size: 0.9rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .blue {
+    background-color: #4f66a7 !important;
+  }
+
+  .hm-indigo-strong {
+
+    .mask,
+    .full-bg-img {
+      background-color: rgba(79, 102, 167, 0.6);
+    }
+  }
+
+  .streak1 {
+    background: #f7d27f;
+    height: 180px;
+  }
+
+  .section .section-description {
+    font-weight: 300;
+  }
+
+  .btn-primary {
+    background: #4f66a7 !important;
+
+    &:hover,
+    &:focus {
+      background-color: #6c86cf !important;
+    }
+  }
+
+}
+
+
+
+
+// Architect portfolio
+.architect {
+
+  .font-up {
+    text-transform: uppercase;
+  }
+
+  .black-skin .top-nav-collapse {
+    background-color: #383a3e;
+  }
+
+  .grey-text {
+    color: #dddcdc !important;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .line {
+    background: #848484 none repeat scroll 0 0;
+    height: 2px;
+    width: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    line-height: 1.6;
+  }
+
+  .icon-area {
+    .circle-icon i {
+      background: rgba(107, 109, 114, 0.84);
+
+      &:hover {
+        background: #c99b73;
+      }
+    }
+  }
+
+  .section {
+    margin-bottom: 0rem;
+  }
+
+  .black-skin {
+    .page-footer {
+      background-color: #323438;
+    }
+  }
+
+  .btn-secondary {
+    background: #7d8086 !important;
+
+    &:hover,
+    &:focus {
+      background-color: #ae815a !important;
+    }
+  }
+
+  .section {
+    .center-text {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  input[type="email"]:focus:not([readonly]),
+  input[type="text"]:focus:not([readonly]),
+  input[type="password"]:focus:not([readonly]),
+  textarea.md-textarea:focus:not([readonly]) {
+    border-color: #c99b73;
+    box-shadow: 0 1px 0 0 #c99b73;
+
+    &+label {
+      color: #c99b73;
+    }
+  }
+}
+
+
+
+// Legal Portfolio
+.legal {
+  .yellow-text {
+    color: #c89a69 !important;
+  }
+
+  h5 {
+    line-height: 1.5;
+  }
+
+  .hm-brown-strong {
+
+    .mask,
+    .full-bg-img {
+      background-color: rgba(150, 114, 73, 0.6);
+    }
+  }
+
+  .primary-color {
+    background-color: #4a4947 !important;
+  }
+
+  .btn-primary {
+    background: #c89a69 !important;
+
+    &:hover,
+    &:focus {
+      background-color: #4a4947 !important;
+    }
+  }
+
+  .btn-secondary {
+    background: #4a4947 !important;
+
+    &:hover,
+    &:focus {
+      background-color: #c89a69 !important;
+    }
+  }
+
+  footer.page-footer {
+    margin-top: inherit;
+  }
+
+  .avatar {
+    display: block;
+    max-width: 75%;
+    height: auto;
+    margin: auto
+  }
+
+  input[type="email"]:focus:not([readonly]),
+  input[type="text"]:focus:not([readonly]),
+  input[type="password"]:focus:not([readonly]),
+  textarea.md-textarea:focus:not([readonly]) {
+    border-color: #c89a69;
+    box-shadow: 0 1px 0 0 #c89a69;
+
+    &+label {
+      color: #c89a69;
+    }
+  }
+
+  .md-form {
+    .prefix {
+      &.active {
+        color: #c89a69;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .bottom-panel {
+      margin-top: -15px;
+      margin-left: 20px;
+      margin-right: 15px;
+    }
+  }
+}
+
+
+
+// health-care portfolio
+.health-care {
+  .mask {
+    &.rgba-gradient {
+      background: linear-gradient(45deg, rgba(29, 236, 197, 0.7), rgba(91, 14, 214, 0.7));
+    }
+  }
+
+  .navbar {
+    background-color: #7d8488;
+
+    &:not(.top-nav-collapse) {
+      background-color: transparent;
+    }
+
+    @media (max-width: 768px) {
+      &:not(.top-nav-collapse) {
+        background: #7d8488;
+      }
+    }
+
+    @media (min-width: 769px) {
+      &:not(.top-nav-collapse) {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .page-footer {
+    background-color: #7d8488;
+  }
+
+  .navbar {
+    font-weight: 400;
+  }
+
+  .card-body h5 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    letter-spacing: 2px;
+  }
+
+  h3 {
+    line-height: 1.7
+  }
+
+  .feature-box .features-big .fas,
+  .feature-box .features-big .far,
+  .feature-box .features-big .fab {
+    font-size: 3rem;
+  }
+
+
+  .grey-text:not(.fas) {
+    font-weight: 300
+  }
+
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.2) !important;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.3) !important;
+    }
+  }
+
+  input[type="email"]:focus:not([readonly]),
+  input[type="text"]:focus:not([readonly]),
+  input[type="password"]:focus:not([readonly]),
+  textarea.md-textarea:focus:not([readonly]) {
+    border-color: #2196F3;
+    box-shadow: 0 1px 0 0 #2196F3;
+
+    &+label {
+      color: #2196F3;
+    }
+  }
+}
+
+
+
+// Graphic designer portfolio
+.designer {
+  .navbar {
+    background-color: #222;
+
+    &:not(.top-nav-collapse) {
+      background-color: transparent;
+    }
+
+    @media (max-width: 768px) {
+      &:not(.top-nav-collapse) {
+        background: #222;
+      }
+    }
+
+    @media (min-width: 769px) {
+      &:not(.top-nav-collapse) {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .mask {
+
+    &.rgba-gradient {
+      background: linear-gradient(45deg, rgba(234, 21, 129, 0.6), rgba(10, 23, 187, 0.6));
+    }
+  }
+
+  .progress-bar {
+    height: 0.4rem;
+    color: #fff;
+    background-color: #3f51b5;
+  }
+
+  .black-text {
+    color: #585858 !important;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-box {
+
+    .features-big .fas,
+    .features-big .far,
+    .features-big .fab {
+      font-size: 3rem;
+    }
+  }
+
+  .icon-area {
+    .circle-icon i {
+      background: #8f8e92;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .md-pills {
+    .nav-item .nav-link {
+      color: #000;
+      background-color: #fff;
+
+      &:hover {
+        background-color: transparent;
+        color: #a2a2a2;
+        border-color: transparent;
+      }
+
+      &.active {
+        box-shadow: none;
+        color: #3f51b5;
+        background-color: transparent;
+        border-color: transparent;
+      }
+    }
+  }
+
+  .section {
+    .section-description {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .nav-tabs {
+    border-bottom: 0;
+    border: 0
+  }
+
+  .icon-area {
+    .circle-icon i:hover {
+      background: #3f51b5;
+    }
+  }
+
+  .btn-secondary {
+    background: #3f51b5 !important;
+
+    &:hover,
+    &:focus {
+      background-color: #7e8ee8 !important;
+    }
+  }
+
+  h4 {
+    letter-spacing: 3px;
+  }
+
+  footer {
+    &.page-footer {
+      margin-top: 0px;
+      background-color: #222;
+    }
+  }
+
+  input[type="email"]:focus:not([readonly]),
+  input[type="text"]:focus:not([readonly]),
+  input[type="password"]:focus:not([readonly]),
+  textarea.md-textarea:focus:not([readonly]) {
+    border-color: #ce51a1;
+    box-shadow: 0 1px 0 0 #ce51a1;
+
+    &+label {
+      color: #ce51a1;
+    }
+  }
+}
+
+.intro-page .navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+  box-shadow: none;
+}
+
+.mask {
+  background-attachment: fixed;
+}
+
+
+.footer-socials {
+  .btn-floating {
+    @media (max-width: 450px) {
+      margin: 2px;
+    }
+  }
+}
+
+.icon-area {
+  .btn-floating {
+    transition: all .5s ease-in-out;
+    border: 2px solid #fff !important;
+
+    &:hover {
+      background: #C99B73 !important;
+      cursor: pointer;
+    }
+  }
+
+
+  strong {
+    color: #343434;
+    position: relative;
+
+    &::after {
+      background: #343434 none repeat scroll 0 0;
+      bottom: 0;
+      content: "";
+      height: 2px;
+      left: 50%;
+      margin-left: -35px;
+      position: absolute;
+      width: 70px;
+    }
+  }
+}
+
+.designer {
+  .icon-area {
+    .btn-floating {
+      &:hover {
+        background: #7C61BC !important;
+      }
+    }
+  }
+}
+
+.architect {
+  .icon-area {
+    strong {
+      &::after {
+        height: 1px;
+      }
+
+    }
+  }
+}

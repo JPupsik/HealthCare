@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}List of doctors{% endblock %}
+
+{% block content %}
+    <div class="mask rgba-gradient pb-5 h-100">
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center pt-5 mt-3">
+
+                <!--Grid column-->
+                <div class="col-md-8">
+                    {% for d in doctors %}
+
+                    <div class="card">
+                        <div class="card-body">
+                            {{ d }} <a href="/make-reserve/{{ d.id }}/">Make a reservation</a>
+                        </div>
+                    </div>
+
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

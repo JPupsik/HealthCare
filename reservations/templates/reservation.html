@@ -5,10 +5,16 @@
 {% block content %}
     <div class="mask rgba-gradient pb-5 h-100">
         <div class="container h-100 d-flex justify-content-center align-items-center">
-
-            <!--Grid row-->
-            <div class="row d-flex justify-content-center pt-5 mt-3">
+            <br class="row d-flex justify-content-center pt-5 mt-3">
                 <p>Making reservation to doctor - {{ doctor }} </p>
+                <form class="form" method="post">
+                    {% csrf_token %}
+                    {% for field in form %}
+                    {{ field }}
+                    {% endfor %}
+                    <input type="submit" class="btn btn-indigo btn-rounded mt-4"
+                                                   value="Make a reservation">
+                </form>
             </div>
         </div>
     </div>

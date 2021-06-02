@@ -1,11 +1,16 @@
 from django.contrib.auth import get_user_model
 from django.db import models
-User = get_user_model()
 
 from authentication.models import Doctor
+User = get_user_model()
 
 
 class Reservation(models.Model):
     doctor = models.ForeignKey(Doctor, on_delete=models.CASCADE)
     client = models.ForeignKey(User, on_delete=models.CASCADE)
-    spot = models.DateField()
+    time = models.TimeField()
+    date = models.DateField()
+
+    def __str__(self):
+        line = 'Appointment with Doctor {0} at {1}'.format(str(self.doctor), self.time.__format__('%H:%M'))
+        return line

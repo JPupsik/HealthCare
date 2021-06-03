@@ -12,5 +12,5 @@ class Reservation(models.Model):
     date = models.DateField()
 
     def __str__(self):
-        line = 'Appointment with Doctor {0} at {1}'.format(str(self.doctor), self.time.__format__('%H:%M'))
+        line = 'Appointment with Doctor {} at {}'.format(str(self.doctor), self.time.__format__('%H:%M'))
         return line

@@ -55,31 +55,27 @@
 
             <li class="nav-item">
 
-              <a class="nav-link text-uppercase" href="#home">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-uppercase" href="/">Home <span class="sr-only">(current)</span></a>
 
             </li>
 
             <li class="nav-item">
 
-              <a class="nav-link text-uppercase" href="#about" data-offset="100">About Us </a>
+              <a class="nav-link text-uppercase" href="/doctors/" data-offset="100">Doctors </a>
 
             </li>
 
+            {% if request.user.is_authenticated %}
             <li class="nav-item">
 
-              <a class="nav-link text-uppercase" href="#services" data-offset="20">Services</a>
+              <a class="nav-link text-uppercase" href="/reservations/" data-offset="20">My reservations</a>
 
             </li>
+            {% endif %}
 
             <li class="nav-item">
 
-              <a class="nav-link text-uppercase" href="#portfolio" data-offset="100">Portfolio</a>
-
-            </li>
-
-            <li class="nav-item">
-
-              <a class="nav-link text-uppercase" href="#contact" data-offset="100">Contact</a>
+              <a class="nav-link text-uppercase" href="#portfolio" data-offset="100">About Us</a>
 
             </li>
 

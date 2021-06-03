@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}List of doctors{% endblock %}
+
+{% block content %}
+    <div class="mask rgba-gradient pb-5 h-100">
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+
+        <br class="row d-flex justify-content-center pt-5 mt-3">
+        <div class="pr-5">
+            <h1 class="font-weight-bold text-uppercase">My reservations</h1>
+            <i class="far fa-newspaper fa-3x mb-4" aria-hidden="true"></i>
+        </div>
+        <br class="row d-flex justify-content-center pt-5 mt-3">
+        <div class="row text-center wow fadeIn">
+            {% for r in reservations %}
+            <div class="col-md-3 mb-5">
+
+                <div class="card card-body hoverable">
+
+                    <h5 class="feature-title mb-4">{{ r.date }}</h5>
+
+                    <p class="grey-text">{{ r }}</p>
+
+                    <a class="btn btn-outline-light-red p-0 btn-rounded wow fadeInUp waves-effect waves-light" data-wow-delay="0.2s" href="{% url 'reservation_delete' r.id %}" data-offset="100" style="visibility: visible; animation-name: fadeInUp; animation-delay: 0.2s;"> <span>CANCEL </span> </a>
+                </div>
+
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+    </div>
+{% endblock %}
